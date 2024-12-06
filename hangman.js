@@ -38,11 +38,12 @@ let wordStatus = null;
 
 
 function randomWord() {
-    answer = programing_languages[Math.floor(Math.random() * programing_languages.length)];
+    answer = programing_languages[Math.floor(Math.random() * programing_languages.length)].trim();
 }
 
+
 function generateButtons() {
-    let buttonsHTML = 'abcdefghijklmnoprstuvz'.split('').map(letter =>
+    let buttonsHTML = 'abcdefghijklmnoprstuvzyx'.split('').map(letter =>
         `
 
         <button
@@ -65,7 +66,7 @@ function handleGuess(chosenLetter) {
     document.getElementById(chosenLetter).setAttribute('disabled', true);
 
 
-    if (answer.indexOf(chosenLetter) >= 0) {
+    if (answer.indexOf(chosenLetter) != -1) {
         guessedWord();
         checkIfGameWon();
 
@@ -87,9 +88,10 @@ function updateHangmanPicture() {
 
 
 function guessedWord() {
-    wordStatus = answer.split('').map(letter => (guessed.indexOf(letter) >= 0 ? letter : " __")).join('');
 
+    wordStatus = answer.split('').map(letter => (guessed.indexOf(letter) >= 0 ? letter : "__")).join(' ');
     document.getElementById('wordSpotlight').innerHTML = wordStatus;
+
 
     if (wordStatus === answer) {
         document.getElementById('wordSpotlight').style.fontSize = "48px";
@@ -102,7 +104,10 @@ function updateMistakes() {
 }
 
 function checkIfGameWon() {
-    if (wordStatus === answer) {
+
+    if (!wordStatus.includes('_')) {
+
+
         document.getElementById('keyboard').innerHTML = '<span style="font-size: 48px; font-weight: bold;">You Won</span>';
         document.querySelector('.guess-word').style.display = 'none';
 
