@@ -17,7 +17,7 @@ __Features__
 - reset
 
 ## __Technologies Used__
-IDE:Visual Studio Code
+IDE: Visual Studio Code
 
 
 ## __Example Gameplay__
@@ -32,4 +32,4 @@ __User does not guess the word__
 ![](https://github.com/farissikira/SpaceMan/blob/6cbe52f36dbd3cc1977cccf109f9ddf89c65a237/picture2hangman.JPG)
 
 __User guesses the word__
-![]
+![](https://github.com/farissikira/SpaceMan/blob/68905be4c8258c01ae392a01579531db5fd4e712/picture4.JPG)
