@@ -16,13 +16,20 @@ __Features__
 - checkIfGameLost,
 - reset
 
-__Technologies Used__
+## __Technologies Used__
 IDE:Visual Studio Code
 
-__Example Gameplay__
 
-User opens the game
+## __Example Gameplay__
+
+__User opens the game__
 ![](https://github.com/farissikira/SpaceMan/blob/e11a09912e0e4c552dbbe94cfac2d6f8a342f040/1.hangmanPicture.JPG)
-User enters letters
-![]
+
+__User enters letters__
+![](https://github.com/farissikira/SpaceMan/blob/be3e8732a512942ae3741fce2ff0774aeb5d32e8/picture3.JPG)
+
+__User does not guess the word__
 ![](https://github.com/farissikira/SpaceMan/blob/6cbe52f36dbd3cc1977cccf109f9ddf89c65a237/picture2hangman.JPG)
+
+__User guesses the word__
+![]
