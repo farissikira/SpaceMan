@@ -22,3 +22,4 @@ IDE:Visual Studio Code
 __Example Gameplay__
 
 ![](https://github.com/farissikira/SpaceMan/blob/e11a09912e0e4c552dbbe94cfac2d6f8a342f040/1.hangmanPicture.JPG)
+![User does not guess the word]()
